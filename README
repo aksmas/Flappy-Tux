@@ -1,0 +1,52 @@
+**Repository for project made in CS360 course
+
+**Pogo Flip
+
+
+Libraries:
+freeglut3-dev
+
+Image loading:
+libsoil
+
+Object loading:
+tinyobjloader from https://github.com/syoyo/tinyobjloader
+
+Audio:
+libopenal-dev
+libal-dev
+libalut-dev
+
+Compilation:
+cd game
+make
+
+
+Code structre:
+
+/libs : Useful libraries - obj file loading, window properties, vertex and fragment shaders
+/models : Contain the models used in the levels - 
+		Tux : Penguin
+		Monkey
+/rooms : Contains the actual level models. Currently we are using static predefined models, although we may add some procedurally generated models too
+
+/sounds : Sounds for game
+/sprites : Images. Currently empty
+/textures : Global textures for welcome screen, HUD etc. 
+/game : The game logic
+	game.cpp: Overall game properties (sound, window loading, level management)
+	level.cpp: Level logic 
+
+README: refer this
+useful_links.txt : Various api documentation
+
+
+Obj file exporting from blender:
+Include
+Normals
+uvs
+Materials
+Triangulate edges
+Objects as obj Groups
+Material groups
+
